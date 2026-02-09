@@ -1,0 +1,24 @@
+{
+    "python.defaultInterpreterPath": "/opt/anaconda3/envs/evals/bin/python",
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.terminal.activateEnvironment": true,
+    "notebook.formatOnSave.enabled": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+
+    "terminal.integrated.defaultProfile.osx": "bash",
+
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash",
+            "args": [
+                "-c",
+                "source /opt/anaconda3/etc/profile.d/conda.sh && conda activate evals && exec bash"
+            ]
+        }
+    },
+    
+    "github.copilot.chat.anthropic.thinking.enabled": true
+}

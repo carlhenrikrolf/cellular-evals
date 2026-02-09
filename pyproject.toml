@@ -1,0 +1,15 @@
+[project]
+requires-python = ">=3.14"
+name = "cellular-evals"
+version = "0.0.0"
+dependencies = [
+    "anthropic>=0.71.0",
+    "inspect-ai>=0.3.140",
+    "inspect-evals",
+    "mistralai",
+    "datasets", # for hugging face
+]
+
+
+[project.optional-dependencies]
+fortress = []

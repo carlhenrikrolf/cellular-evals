@@ -1,0 +1,17 @@
+- title: "Example-Bench: Your Amazing AI Benchmark"
+  description: |
+    A detailed description of what this benchmark evaluates and why it's important.
+    This can span multiple lines using YAML's pipe (|) syntax.
+  path: src/inspect_evals/your_evaluation
+  arxiv: https://arxiv.org/abs/1234.12345
+  group: Coding
+  contributors: ["your-github-handle"]
+  tasks:
+    - name: task-name
+      dataset_samples: 100
+  dependency: "your_evaluation"  # Optional
+  tags: ["Agent"]  # Optional
+  metadata:  # optional metadata documenting eval information. All fields optional
+    sandbox: []  # list of eval aspects that use a sandbox, can include "solver" and/or "scorer"
+    requires_internet: true  # boolean indicating whether the eval requires internet access
+    environment: "Kali-Linux"  # optional environment information
